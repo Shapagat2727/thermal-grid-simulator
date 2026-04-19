@@ -1,0 +1,15 @@
+[project]
+name = "thermal_grid_simulator"
+version = "0.1.0"
+description = "IoT-based thermal grid simulator with real-time data ingestion"
+authors = [
+    { name = "Shapagat Bolat" }
+]
+requires-python = ">=3.10"
+
+
+[tool.black]
+line-length = 88
+
+[tool.isort]
+profile = "black"
