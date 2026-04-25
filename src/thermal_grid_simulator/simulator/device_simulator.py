@@ -9,7 +9,8 @@ def simulate_device(device_id):
         data = {
             "device_id": device_id,
             "temperature": random.uniform(40, 70),
-            "energy_usage": random.uniform(0.5, 3.0)
+            "energy_usage": random.uniform(0.5, 3.0),
+            "timestamp": time.strftime("%Y-%m-%dT%H:%M:%S")
         }
 
         try:
