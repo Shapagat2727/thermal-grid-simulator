@@ -16,6 +16,8 @@ The system is designed to reflect **real-world distributed architectures**, focu
 
 ```
 Simulator → API → Redis Queue → Worker → PostgreSQL
+                                  ↓
+                            Dead Letter Queue
 ```
 
 ### Components
@@ -52,6 +54,9 @@ Simulator → API → Redis Queue → Worker → PostgreSQL
 * Handling **real-time data ingestion pipelines**
 * Implementing **queue-based architectures**
 * Writing **clean, modular, production-style python3 code**
+* Retry logic: Failed messages are retried up to a maximum threshold
+* Dead Letter Queue (DLQ): Messages that repeatedly fail are moved to a separate queue for inspection
+* Logging: Processing steps and errors are logged for visibility
 * Managing infrastructure via environment configuration
 
 ---
