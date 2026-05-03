@@ -20,6 +20,7 @@ def simulate_device(device_id):
         try:
             response = requests.post(API_URL, json=data)
             print(f"Device {device_id}: {response.status_code}")
+
         except Exception as e:
             print(f"Error: {e}")
 
