@@ -1,0 +1,7 @@
+redis
+dotenv
+sqlalchemy
+psycopg2
+requests
+fastapi
+httpx
